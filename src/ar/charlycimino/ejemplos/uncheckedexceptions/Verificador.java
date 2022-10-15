@@ -8,8 +8,8 @@ package ar.charlycimino.ejemplos.uncheckedexceptions;
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
 public class Verificador {
-    public static void checkEsNegativo(int x) throws Exception  {
+    public static void checkEsNegativo(int x) throws RuntimeException  { // El throws sería opcional por ser 'unchecked'
         if (x < 0)
-            throw new Exception("No puede ser negativo");
+            throw new RuntimeException("No puede ser negativo");
     }  
 }
